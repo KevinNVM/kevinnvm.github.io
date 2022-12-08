@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "scripts": {
+    "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -o build.css --minify"
+  },
+  "dependencies": {
+    "daisyui": "^2.42.1",
+    "prettier": "^2.8.1",
+    "prettier-plugin-tailwindcss": "^0.2.0"
+  }
+}
