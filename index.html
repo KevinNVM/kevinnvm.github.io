@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,11 +38,6 @@
         scroll-padding-top: 4rem; /* Replace with your fixed navbar height */
       }
     </style>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
     <script defer>
       function fetchTheme() {
         if (
@@ -58,11 +54,10 @@
       }
       fetchTheme();
     </script>
-
     <title>Made Kevin Darmawan</title>
   </head>
   <body class="bg-white transition-all duration-300 dark:bg-gray-800">
-    <!-- Section 2 -->
+    <!-- Section 1 -->
     <section class="bg-white px-2 pb-32 pt-4 dark:bg-gray-800 md:px-0">
       <div
         class="container mx-auto max-w-6xl items-center px-8 xl:px-5"
@@ -76,18 +71,32 @@
               <h1
                 class="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-50 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl"
               >
-                <span class="block">Hi 👋, I'm</span>
-                <span class="block text-indigo-600 xl:inline"
+                <span class="block" data-aos="fade-down" data-aos-duration="500"
+                  >Hi 👋, I'm</span
+                >
+                <span
+                  class="block text-indigo-600 xl:inline"
+                  data-aos="fade-in"
+                  data-aos-delay="50"
+                  data-aos-duration="500"
                   >Made Kevin Darmawan</span
                 >
               </h1>
               <p
                 class="mx-auto text-base text-gray-500 sm:max-w-md md:max-w-3xl lg:text-xl"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="500"
               >
                 I'm a Web Developer from Indonesia, and I love to learn new
                 things!
               </p>
-              <div class="relative flex flex-col sm:flex-row sm:space-x-4">
+              <div
+                class="relative flex flex-col sm:flex-row sm:space-x-4"
+                data-aos="fade-down"
+                data-aos-delay="100"
+                data-aos-duration="500"
+              >
                 <a
                   href="#about-me"
                   class="mb-3 flex w-full items-center rounded-md bg-indigo-600 px-6 py-3 text-lg text-white hover:bg-indigo-700 sm:mb-0 sm:w-auto"
@@ -105,16 +114,24 @@
           </div>
           <div class="w-full md:w-1/2">
             <div class="h-auto w-full overflow-hidden rounded-md sm:rounded-xl">
-              <img src="dist/me-profile-removebg.png" class="object-cover" />
+              <img
+                src="dist/me-profile-removebg.png"
+                class="object-cover"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="500"
+              />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 3 -->
+    <!-- Section 2 -->
     <header
       id="header"
+      data-aos="fade-up"
+      data-aos-once="true"
       class="sticky top-0 z-50 w-full bg-white bg-opacity-50 backdrop-blur-sm dark:bg-gray-800 dark:bg-opacity-50"
     >
       <div
@@ -202,7 +219,7 @@
       ></path>
     </svg>
 
-    <!-- Section 2 -->
+    <!-- Section 3 -->
 
     <section
       class="min-w-screen flex items-center justify-center bg-gray-50 py-20 text-gray-900 dark:bg-gray-700 dark:text-gray-50"
@@ -213,6 +230,7 @@
       >
         <div
           class="container mx-auto flex flex-col items-start lg:items-center"
+          data-aos="slide-up"
         >
           <p
             class="relative mb-12 flex w-full items-start justify-start text-lg font-bold uppercase tracking-wider text-teal-500 lg:items-center lg:justify-center"
@@ -227,7 +245,12 @@
             />
           </div>
           <div class="flex flex-col justify-center gap-8 md:flex-row">
-            <div class="w-full md:w-1/4">
+            <div
+              class="w-full md:w-1/4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="500"
+            >
               Hello, Welcome to this portfolio page of mine!, Let me introduce
               my self first. My name is
               <a href="//instagram.com/mkevin_1" class="link-underline link"
@@ -236,7 +259,12 @@
               Javascript, but mostly PHP. I'm also learning python but i rarely
               use them for making web.
             </div>
-            <div class="w-full md:w-1/4">
+            <div
+              class="w-full md:w-1/4"
+              data-aos="fade-down"
+              data-aos-delay="150"
+              data-aos-duration="500"
+            >
               I have created several simple projects with PHP and Javascript
               mostly because that's what i do on my free time, and because
               they're like the most popular language for building Web Apps. If
@@ -270,6 +298,9 @@
       <div class="bg-white px-4 dark:bg-gray-800 md:px-16">
         <div
           class="container mx-auto flex flex-col items-start lg:items-center"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="500"
         >
           <p
             class="relative mb-12 flex w-full items-start justify-start text-lg font-bold uppercase tracking-wider text-purple-500 lg:items-center lg:justify-center"
@@ -288,11 +319,14 @@
           >
             Take a look at some of my projects!
           </p>
-          <div class="overflow-x-auto">
+          <div class="overflow-x-hidden">
             <div
               class="mb-8 flex w-full flex-col justify-center gap-8 md:flex-row"
             >
               <a
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="500"
                 href="//github.com/kevinnvm/tokonline"
                 target="_blank"
                 class="group relative block w-full bg-black md:w-1/2"
@@ -300,7 +334,7 @@
                 <img
                   alt="Project 1"
                   src="https://images.unsplash.com/photo-1542744095-291d1f67b221?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50 rounded-lg"
+                  class="absolute inset-0 h-full w-full rounded-lg object-cover opacity-75 transition-opacity group-hover:opacity-50"
                 />
 
                 <div class="relative p-8">
@@ -327,6 +361,9 @@
                 </div>
               </a>
               <a
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="500"
                 href="//github.com/kevinnvm/vnblog"
                 target="_blank"
                 class="group relative block w-full bg-black md:w-1/2"
@@ -334,7 +371,7 @@
                 <img
                   alt="Project 2"
                   src="https://images.unsplash.com/photo-1566207462754-97c86c31db3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50 rounded-lg"
+                  class="absolute inset-0 h-full w-full rounded-lg object-cover opacity-75 transition-opacity group-hover:opacity-50"
                 />
 
                 <div class="relative p-8">
@@ -361,6 +398,9 @@
                 </div>
               </a>
               <a
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="500"
                 href="//github.com/kevinnvm/simple-digital-clock"
                 target="_blank"
                 class="group relative block w-full bg-black md:w-1/2"
@@ -368,7 +408,7 @@
                 <img
                   alt="Project 3"
                   src="https://images.unsplash.com/photo-1611746869696-d09bce200020?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50 rounded-lg"
+                  class="absolute inset-0 h-full w-full rounded-lg object-cover opacity-75 transition-opacity group-hover:opacity-50"
                 />
 
                 <div class="relative p-8">
@@ -399,6 +439,9 @@
               class="mb-8 flex w-full flex-col justify-center gap-8 md:flex-row"
             >
               <a
+                data-aos="fade-up"
+                data-aos-delay="150"
+                data-aos-duration="500"
                 href="//github.com/kevinnvm/vnchat"
                 target="_blank"
                 class="group relative block w-full bg-black md:w-1/2"
@@ -406,7 +449,7 @@
                 <img
                   alt="Project 4"
                   src="dist/project-clock.png"
-                  class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50 rounded-lg"
+                  class="absolute inset-0 h-full w-full rounded-lg object-cover opacity-75 transition-opacity group-hover:opacity-50"
                 />
 
                 <div class="relative p-8">
@@ -435,6 +478,9 @@
                 </div>
               </a>
               <a
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="500"
                 href="//github.com/kevinnvm/simple-crud-w-auth"
                 target="_blank"
                 class="group relative block w-full bg-black md:w-1/2"
@@ -442,7 +488,7 @@
                 <img
                   alt="Project 5"
                   src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
-                  class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50 rounded-lg"
+                  class="absolute inset-0 h-full w-full rounded-lg object-cover opacity-75 transition-opacity group-hover:opacity-50"
                 />
 
                 <div class="relative p-8">
@@ -470,11 +516,16 @@
                   </div>
                 </div>
               </a>
-              <a class="group relative block w-full bg-black md:w-1/2">
+              <a
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="500"
+                class="group relative block w-full bg-black md:w-1/2"
+              >
                 <img
                   alt="Comming Soon.."
                   src="https://images.unsplash.com/photo-1592620361408-9a6acd17ba49?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                  class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50 rounded-lg"
+                  class="absolute inset-0 h-full w-full rounded-lg object-cover opacity-75 transition-opacity group-hover:opacity-50"
                 />
 
                 <div class="relative p-8">
@@ -522,6 +573,9 @@
       >
         <div
           class="container mx-auto flex flex-col items-start lg:items-center"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="500"
         >
           <p
             class="relative mb-12 flex w-full items-start justify-start text-lg font-bold uppercase tracking-wider text-amber-500 lg:items-center lg:justify-center"
@@ -542,7 +596,11 @@
               Got any projects? or got something to say? Lets connect!
             </p>
             <form action="#" class="space-y-8">
-              <div>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="500"
+              >
                 <label
                   for="email"
                   class="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300"
@@ -556,7 +614,11 @@
                   required
                 />
               </div>
-              <div>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="500"
+              >
                 <label
                   for="subject"
                   class="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300"
@@ -570,7 +632,12 @@
                   required
                 />
               </div>
-              <div class="sm:col-span-2">
+              <div
+                class="sm:col-span-2"
+                data-aos="fade-up"
+                data-aos-delay="150"
+                data-aos-duration="500"
+              >
                 <label
                   for="message"
                   class="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-400"
@@ -584,6 +651,9 @@
                 ></textarea>
               </div>
               <button
+                data-aos="fade-up"
+                data-aos-delay="150"
+                data-aos-duration="500"
                 type="submit"
                 class="rounded-lg bg-indigo-700 py-3 px-5 text-center text-sm font-medium text-white transition-all duration-300 hover:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800/50 sm:w-fit"
               >
@@ -611,7 +681,12 @@
       <div
         class="mx-auto max-w-screen-xl space-y-8 overflow-hidden px-4 py-12 sm:px-6 lg:px-8"
       >
-        <nav class="-mx-5 -my-2 flex flex-wrap justify-center">
+        <nav
+          class="-mx-5 -my-2 flex flex-wrap justify-center"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-once="true"
+        >
           <div class="px-5 py-2">
             <a
               href="#about-me"
@@ -650,6 +725,10 @@
             href="//www.facebook.com/madekevin.darmawan.5"
             class="text-gray-400 hover:text-gray-500"
             target="_blank"
+            data-aos="fade-down"
+            data-aos-delay="50"
+            data-aos-duration="500"
+            data-aos-once="true"
           >
             <span class="sr-only">Facebook</span>
             <svg
@@ -669,6 +748,10 @@
             href="//instagram.com/mkevin_1"
             target="_blank"
             class="text-gray-400 hover:text-gray-500"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="500"
+            data-aos-once="true"
           >
             <span class="sr-only">Instagram</span>
             <svg
@@ -691,6 +774,10 @@
               aria-hidden="true"
               fill="currentColor"
               viewBox="0 0 24 24"
+              data-aos="fade-down"
+              data-aos-delay="150"
+              data-aos-duration="500"
+              data-aos-once="true"
             >
               <path
                 d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
@@ -701,6 +788,10 @@
             href="//github.com/kevinnvm"
             target="_blank"
             class="text-gray-400 hover:text-gray-500"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="500"
+            data-aos-once="true"
           >
             <span class="sr-only">GitHub</span>
             <svg
@@ -720,6 +811,10 @@
             href="mailto:personal.kevindarmawan@gmail.com"
             target="_blank"
             class="text-gray-400 hover:text-gray-500"
+            data-aos="fade-down"
+            data-aos-delay="250"
+            data-aos-duration="500"
+            data-aos-once="true"
           >
             <span class="sr-only">Email</span>
             <svg
@@ -738,7 +833,14 @@
             </svg>
           </a>
         </div>
-        <p class="mt-8 text-center text-base leading-6 text-gray-400">
+        <p
+          class="mt-8 text-center text-base leading-6 text-gray-400"
+          data-aos="fade-down"
+          data-aos-delay="20"
+          data-aos-duration="500"
+          data-aos-once="true"
+          data-aos-offset="0"
+        >
           ©
           <script>
             document.write(new Date().getFullYear());
@@ -770,6 +872,10 @@
       </svg>
     </div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       const header = document.querySelector("#header");
       const toTop = document.querySelector("#to-top-btn");
@@ -814,18 +920,6 @@
           html.classList.remove("dark");
           localStorage.theme = "light";
         }
-      };
-
-      document.body.onload = () => {
-        if (scrollTop < 100) {
-          $("#loader>div").animate({ opacity: 0 }, 100);
-          $("#loader").animate({ opacity: 0 }, 750);
-        } else {
-          $("#loader").remove();
-        }
-        setTimeout(() => {
-          $("body").removeClass("overflow-hidden");
-        }, 200);
       };
     </script>
   </body>
