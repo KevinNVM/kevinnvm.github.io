@@ -2,23 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-a.link {
-    background: linear-gradient(0deg, lightblue, lightblue) no-repeat right bottom / 0 var(--bg-h);
-    transition: background-size 350ms;
-    --bg-h: 100%;
-    text-decoration: none;
-}
-
-a.link:where(:hover, :focus-visible){
-    background-size: 100% var(--bg-h);
-    background-position-x: left;
-}
-
-a.link.link-underline {
-    padding-bottom: 2px;
-    --bg-h: 2px;
-}
-
 @layer components {
     ul  .nav-link {
         @apply text-gray-300/80
@@ -29,4 +12,20 @@ a.link.link-underline {
     a {
         @apply transition-all duration-300
     }
+        a.link {
+            background: linear-gradient(0deg, lightblue, lightblue) no-repeat right bottom / 0 var(--bg-h);
+            transition: background-size 350ms;
+            --bg-h: 100%;
+            text-decoration: none;
+        }
+    
+        a.link:where(:hover, :focus-visible) {
+            background-size: 100% var(--bg-h);
+            background-position-x: left;
+        }
+    
+        a.link.link-underline {
+            padding-bottom: 2px;
+            --bg-h: 2px;
+        }
 }

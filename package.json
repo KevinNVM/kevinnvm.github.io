@@ -4,7 +4,7 @@
   },
   "scripts": {
     "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "npx tailwindcss -o build.css --minify"
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
   },
   "dependencies": {
     "daisyui": "^2.42.1",
