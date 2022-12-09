@@ -71,7 +71,12 @@
               <h1
                 class="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-50 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl"
               >
-                <span class="block" data-aos="fade-down" data-aos-duration="500"
+                <span
+                  class="block"
+                  data-aos="fade-down"
+                  data-aos-duration="500"
+                  data-aos-offset="0"
+                  data-aos-once="true"
                   >Hi 👋, I'm</span
                 >
                 <span
@@ -79,6 +84,8 @@
                   data-aos="fade-in"
                   data-aos-delay="50"
                   data-aos-duration="500"
+                  data-aos-offset="0"
+                  data-aos-once="true"
                   >Made Kevin Darmawan</span
                 >
               </h1>
@@ -87,6 +94,8 @@
                 data-aos="fade-up"
                 data-aos-delay="100"
                 data-aos-duration="500"
+                data-aos-offset="0"
+                data-aos-once="true"
               >
                 I'm a Web Developer from Indonesia, and I love to learn new
                 things!
@@ -96,6 +105,8 @@
                 data-aos="fade-down"
                 data-aos-delay="100"
                 data-aos-duration="500"
+                data-aos-offset="0"
+                data-aos-once="true"
               >
                 <a
                   href="#about-me"
@@ -120,6 +131,8 @@
                 data-aos="fade-up"
                 data-aos-delay="100"
                 data-aos-duration="500"
+                data-aos-offset="0"
+                data-aos-once="true"
               />
             </div>
           </div>
@@ -325,6 +338,7 @@
             >
               <a
                 data-aos="fade-up"
+                data-aos-once="true"
                 data-aos-delay="50"
                 data-aos-duration="500"
                 href="//github.com/kevinnvm/tokonline"
@@ -399,7 +413,7 @@
               </a>
               <a
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="150"
                 data-aos-duration="500"
                 href="//github.com/kevinnvm/simple-digital-clock"
                 target="_blank"
@@ -874,7 +888,9 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        disable: "phone",
+      });
     </script>
     <script>
       const header = document.querySelector("#header");
